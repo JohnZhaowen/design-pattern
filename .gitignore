@@ -5,6 +5,7 @@ biz.tar.gz
 index.json
 .DS_Store
 *.orig
+.class
 target
 .idea
 .idea/*
