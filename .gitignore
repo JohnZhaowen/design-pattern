@@ -5,8 +5,8 @@ biz.tar.gz
 index.json
 .DS_Store
 *.orig
-.class
-target
+target*
+*.class
 .idea
 .idea/*
 .mvn

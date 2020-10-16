@@ -22,5 +22,7 @@ public class AbstractFactoryTest {
         userDao.insert(user);
         userDao.getUser(1);
 
+
+
     }
 }
