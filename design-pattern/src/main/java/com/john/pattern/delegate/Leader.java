@@ -13,8 +13,6 @@ public class Leader {
     }
 
     public void doing(String command){
-
         register.get(command).doing(command);
-
     }
 }

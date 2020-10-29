@@ -13,11 +13,11 @@ public class EventLisenter {
         this.addLisenter(eventType, target, target.getClass().getMethod("on" + toUpperFirstCase(eventType), Event.class));
     }
 
-    public void addLisenter(String eventType, Object target, Method callback){
+    public void addLisenter(String eventType, Object target, Method callback) {
         events.put(eventType, new Event(target, callback));
     }
 
-    private void trigger(Event event){
+    private void trigger(Event event) {
         try {
             event.setSource(this);
             event.setTime(System.currentTimeMillis());
@@ -27,7 +27,7 @@ public class EventLisenter {
         }
     }
 
-    protected void trigger(String trigger){
+    protected void trigger(String trigger) {
         if(!events.containsKey(trigger)){
             return;
         }
@@ -36,7 +36,7 @@ public class EventLisenter {
         trigger(event);
     }
 
-    private String toUpperFirstCase(String str){
+    private String toUpperFirstCase(String str) {
 
         char[] chars = str.toCharArray();
         chars[0] -= 32;
