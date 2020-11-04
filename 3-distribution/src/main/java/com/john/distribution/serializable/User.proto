@@ -1,0 +1,13 @@
+syntax="proto2"
+
+package com.john.distribution.serializable;
+
+option java_package="com.john.distribution.serializable";
+
+option  java_outer_classname="UserProtos";
+
+message User {
+	required String name = 1;
+	required int32 age = 2;
+
+}
