@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>3-distribution</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>multi-thread</module>
+    </modules>
 
     <dependencies>
 
